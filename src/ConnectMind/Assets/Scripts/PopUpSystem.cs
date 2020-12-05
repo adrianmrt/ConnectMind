@@ -5,29 +5,30 @@ using UnityEngine.UI;
 
 public class PopUpSystem : MonoBehaviour
 {
-    
+
     public GameObject prefab;
-    bool active = false;
     private Transform canvas;
+    private Transform newcanvas;
     private GameObject panel;
+    public GameObject toDestroy;
+    private GameObject principalCanvas;
 
-    private void Awake()
+    private void Start()
     {
-        canvas = transform.parent;
-        panel = Instantiate(prefab,canvas);
+        principalCanvas = GameObject.Find("Canvas");
     }
-
     public void popUpWork()
     {
-        if (active == false)
+        canvas = transform.parent.transform.parent;
+        if (canvas != principalCanvas)
         {
-            panel.SetActive(true);
-            active = true;
-        }else if (active == true)
-        {
-            panel.SetActive(false);
-            active = false;
+            canvas = principalCanvas.transform;
         }
+        panel = Instantiate(prefab, canvas);
     }
 
+    public void popUpDestroy()
+    {
+        Destroy(toDestroy);
+    }
 }
