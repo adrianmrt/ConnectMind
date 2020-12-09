@@ -169,10 +169,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 85915255}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 889f79ac6efd3ad4db72b83c5d8110ba, type: 3}
+  m_Script: {fileID: 11500000, guid: e46dd4bc4f839ec4abe7e7f079322606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escena: 3
+  prefab: {fileID: 338301686961644028, guid: 75d52a4d3f96b2a479bb645a91086fe1, type: 3}
+  toDestroy: {fileID: 0}
 --- !u!114 &85915258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +218,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 85915257}
-        m_MethodName: cambioEscena
+        m_MethodName: popUpWork
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -542,10 +543,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 543601216}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 889f79ac6efd3ad4db72b83c5d8110ba, type: 3}
+  m_Script: {fileID: 11500000, guid: e46dd4bc4f839ec4abe7e7f079322606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escena: 3
+  prefab: {fileID: 4219525593455384837, guid: d19efc3a4b3b76341a7fe978642247f4, type: 3}
+  toDestroy: {fileID: 0}
 --- !u!114 &543601219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,7 +592,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 543601218}
-        m_MethodName: cambioEscena
+        m_MethodName: popUpWork
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -793,6 +795,7 @@ GameObject:
   - component: {fileID: 858765177}
   - component: {fileID: 858765176}
   - component: {fileID: 858765175}
+  - component: {fileID: 858765174}
   m_Layer: 5
   m_Name: BAudio
   m_TagString: Untagged
@@ -819,6 +822,20 @@ RectTransform:
   m_AnchoredPosition: {x: -208.2998, y: 109.20064}
   m_SizeDelta: {x: 383.13397, y: 300.48187}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &858765174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858765172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46dd4bc4f839ec4abe7e7f079322606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5854829992852991064, guid: 014361370051c214db9639d84308b49b, type: 3}
+  toDestroy: {fileID: 0}
 --- !u!114 &858765175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -861,7 +878,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 858765176}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 858765174}
+        m_MethodName: popUpWork
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &858765176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1046,10 +1074,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1627664538}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 889f79ac6efd3ad4db72b83c5d8110ba, type: 3}
+  m_Script: {fileID: 11500000, guid: e46dd4bc4f839ec4abe7e7f079322606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escena: 3
+  prefab: {fileID: 5821985892317645572, guid: 3a628c446df1cf24580f26e8b2516011, type: 3}
+  toDestroy: {fileID: 0}
 --- !u!114 &1627664541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1094,7 +1123,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1627664540}
-        m_MethodName: cambioEscena
+        m_MethodName: popUpWork
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
