@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< Updated upstream
     path: Assets/Scenes/Inicio.unity
     guid: e70dc0d10aa8d374baed1225a4401053
   - enabled: 1
+=======
+>>>>>>> Stashed changes
     path: Assets/Scenes/SeleccionEntrenamiento.unity
     guid: 5fb88d54485faa549b173cb226ca5525
   - enabled: 1
