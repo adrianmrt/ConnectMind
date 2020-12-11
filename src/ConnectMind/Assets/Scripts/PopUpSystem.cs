@@ -8,7 +8,6 @@ public class PopUpSystem : MonoBehaviour
 
     public GameObject prefab;
     private Transform canvas;
-    private Transform newcanvas;
     private GameObject panel;
     public GameObject toDestroy;
     private GameObject principalCanvas;
