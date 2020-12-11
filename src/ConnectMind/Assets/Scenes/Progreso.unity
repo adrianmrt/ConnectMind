@@ -413,7 +413,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PUNTUACION
+  m_Text: 120
 --- !u!222 &1901987240
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -576,7 +576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 889f79ac6efd3ad4db72b83c5d8110ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escena: Entrenamiento
+  escena: 0
 --- !u!114 &1953821979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,7 +737,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PUNTUACION
+  m_Text: 152
 --- !u!222 &2054651387
 CanvasRenderer:
   m_ObjectHideFlags: 0

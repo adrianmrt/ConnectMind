@@ -1044,7 +1044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 889f79ac6efd3ad4db72b83c5d8110ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  escena: 2
+  escena: 0
 --- !u!1 &8659568066632911069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,5 +1495,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46dd4bc4f839ec4abe7e7f079322606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2081149192483604632, guid: a5e1302239c3c7a42bbd0ac5daa3b6ed, type: 3}
+  prefab: {fileID: 4219525593455384837, guid: d19efc3a4b3b76341a7fe978642247f4, type: 3}
   toDestroy: {fileID: 8940197396249153698}
