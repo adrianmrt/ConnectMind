@@ -19,21 +19,19 @@ public class PopUpSystem : MonoBehaviour
     }
     public void popUpWork()
     {
-        bool levelChange = true;
         canvas = transform.parent;
 
-        if(canvas.name != "PopUpNormal" && canvas.name != "PopUpDificil")
-        {
-            levelChange = false;
-        }
 
-
-        if (canvas == principalCanvas && levelChange == false)
+        if (canvas != principalCanvas  || canvas.name == "PopUpNormal(Clone)" || canvas.name != "PopUpDificil(Clone")
         {
             canvas = principalCanvas.transform;
 
         }
-
+        if(transform.name=="Boton_minijuego")
+        {
+            canvas = transform.parent;
+        }
+        
         panel = Instantiate(prefab, canvas);
     }
 
