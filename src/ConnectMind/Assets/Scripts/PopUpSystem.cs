@@ -15,14 +15,25 @@ public class PopUpSystem : MonoBehaviour
     private void Start()
     {
         principalCanvas = GameObject.Find("Canvas");
+
     }
     public void popUpWork()
     {
-        canvas = transform.parent.transform.parent;
-        if (canvas != principalCanvas)
+        bool levelChange = true;
+        canvas = transform.parent;
+
+        if(canvas.name != "PopUpNormal" && canvas.name != "PopUpDificil")
+        {
+            levelChange = false;
+        }
+
+
+        if (canvas == principalCanvas && levelChange == false)
         {
             canvas = principalCanvas.transform;
+
         }
+
         panel = Instantiate(prefab, canvas);
     }
 

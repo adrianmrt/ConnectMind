@@ -9,6 +9,17 @@ public class CambioScene : MonoBehaviour
 
     public void cambioEscena()
     {
-        SceneManager.LoadScene(escena);
+        if (transform.parent.transform.parent != null)
+        {
+            if (transform.parent.transform.parent.name == "PopUpNormal(Clone)")
+            {
+                this.escena = 3;
+            }
+            else if (transform.parent.transform.parent.name == "PopUpDificil(Clone)")
+            {
+                this.escena = 4;
+            }
+        }
+        SceneManager.LoadScene(this.escena);
     }
 }

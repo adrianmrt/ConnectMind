@@ -12,7 +12,13 @@ EditorBuildSettings:
     path: Assets/Scenes/SeleccionEntrenamiento.unity
     guid: 5fb88d54485faa549b173cb226ca5525
   - enabled: 1
-    path: Assets/Scenes/Entrenamiento.unity
+    path: Assets/Scenes/Entrenamiento/F_Entrenamiento.unity
+    guid: 782bd88dd9e5113428bc2b4c07d64349
+  - enabled: 1
+    path: Assets/Scenes/Entrenamiento/N_Entrenamiento.unity
+    guid: 73044f8be0bbdf94c956c571ccf03ab2
+  - enabled: 1
+    path: Assets/Scenes/Entrenamiento/D_Entrenamiento.unity
     guid: 144392c5b1bb3b24f854716ed82e8a4d
   - enabled: 1
     path: Assets/Scenes/Progreso.unity
