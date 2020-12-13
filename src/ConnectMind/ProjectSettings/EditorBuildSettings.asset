@@ -27,6 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Configuracion.unity
     guid: e94c01dd2f01ff94dad62cf9ad6ded09
   - enabled: 1
-    path: Assets/Scenes/PantallaJuego.unity
-    guid: 3281f7d55eaad3948832b77e282b5496
+    path: Assets/Scenes/Juego.unity
+    guid: bcff967d4cae0474783b4585b7602117
   m_configObjects: {}
