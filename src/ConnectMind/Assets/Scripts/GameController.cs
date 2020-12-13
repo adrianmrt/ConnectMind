@@ -72,8 +72,8 @@ public class GameController : MonoBehaviour
         //elementos pantallaResultado
 
         recuadroPuntuacion = pantallaResultado.transform.GetChild(3).gameObject;
-        estrellasResultado = new GameObject[4];
-        for (int i = 0; i < 4; i++)
+        estrellasResultado = new GameObject[5];
+        for (int i = 0; i < 5; i++)
         {
             estrellasResultado[i] = pantallaResultado.transform.GetChild(4).GetChild(i).gameObject;
         }
@@ -121,7 +121,7 @@ public class GameController : MonoBehaviour
                     puntosRondasVD[numeroRonda - 1].SetActive(true);
                     puntosRondasVD[numeroRonda - 1].GetComponent<Image>().sprite = spritesBotones[0];
                     nivelVD.GetComponent<Image>().sprite = spritesBotones[0];
-                    puntuacion += 25;
+                    puntuacion += 20;
 
                 }
                 else if (nivelFacil.GetComponent<F_Calculadora>().end == true && nivelFacil.GetComponent<F_Calculadora>().acierto == false)
@@ -147,7 +147,7 @@ public class GameController : MonoBehaviour
                     puntosRondasVD[numeroRonda - 1].SetActive(true);
                     puntosRondasVD[numeroRonda - 1].GetComponent<Image>().sprite = spritesBotones[2];
                     nivelVD.GetComponent<Image>().sprite = spritesBotones[2];
-                    puntuacion += 60;
+                    puntuacion += 50;
                 }
                 else if (nivelNormal.GetComponent<N_Calculadora>().end == true && nivelNormal.GetComponent<N_Calculadora>().acierto == false)
                 {
@@ -171,7 +171,7 @@ public class GameController : MonoBehaviour
                     puntosRondasVD[numeroRonda - 1].SetActive(true);
                     puntosRondasVD[numeroRonda - 1].GetComponent<Image>().sprite = spritesBotones[4];
                     nivelVD.GetComponent<Image>().sprite = spritesBotones[4];
-                    puntuacion += 50;
+                    puntuacion += 70;
                 }
                 else if (nivelDificil.GetComponent<D_Calculadora>().end == true && nivelDificil.GetComponent<D_Calculadora>().acierto == false)
                 {
@@ -267,13 +267,13 @@ public class GameController : MonoBehaviour
 
             recuadroPuntuacion.GetComponent<Text>().text = puntuacion.ToString();
 
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 5; i++)
             {
-                if (puntuacion < 40)
+                if (puntuacion < 60)
                 {
                     estrellasResultado[i].GetComponent<Image>().sprite = spritesBotones[10];
                 }
-                else if (puntuacion >= 40 && puntuacion < 110)
+                else if (puntuacion >= 60 && puntuacion < 160)
                 {
                     if (i == 0)
                     {
@@ -284,7 +284,7 @@ public class GameController : MonoBehaviour
                         estrellasResultado[i].GetComponent<Image>().sprite = spritesBotones[10];
                     }
                 }
-                else if (puntuacion >= 110 && puntuacion < 180)
+                else if (puntuacion >= 160 && puntuacion < 300)
                 {
                     if (i == 0 || i == 1)
                     {
@@ -295,7 +295,7 @@ public class GameController : MonoBehaviour
                         estrellasResultado[i].GetComponent<Image>().sprite = spritesBotones[10];
                     }
                 }
-                else if (puntuacion >= 180 && puntuacion < 240)
+                else if (puntuacion >= 300 && puntuacion < 400)
                 {
                     if (i == 0 || i == 1 || i == 2)
                     {
@@ -306,7 +306,18 @@ public class GameController : MonoBehaviour
                         estrellasResultado[i].GetComponent<Image>().sprite = spritesBotones[10];
                     }
                 }
-                else if (puntuacion >= 240)
+                else if (puntuacion >= 400 && puntuacion < 490)
+                {
+                    if (i == 0 || i == 1 || i == 2 || i==3)
+                    {
+                        estrellasResultado[i].GetComponent<Image>().sprite = spritesBotones[9];
+                    }
+                    else
+                    {
+                        estrellasResultado[i].GetComponent<Image>().sprite = spritesBotones[10];
+                    }
+                }
+                else if (puntuacion >= 490)
                 {
 
                     estrellasResultado[i].GetComponent<Image>().sprite = spritesBotones[9];

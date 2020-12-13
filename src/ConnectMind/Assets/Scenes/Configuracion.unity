@@ -546,7 +546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46dd4bc4f839ec4abe7e7f079322606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4219525593455384837, guid: d19efc3a4b3b76341a7fe978642247f4, type: 3}
+  prefab: {fileID: 4219525593455384837, guid: bf015781c2591db40b71c58d6c6cb663, type: 3}
   toDestroy: {fileID: 0}
 --- !u!114 &543601219
 MonoBehaviour:

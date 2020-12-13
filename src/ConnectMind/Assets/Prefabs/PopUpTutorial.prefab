@@ -198,17 +198,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2755932003540325161}
-        m_MethodName: popUpWork
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2755932003540325161}
         m_MethodName: popUpDestroy
         m_Mode: 1
         m_Arguments:
@@ -231,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46dd4bc4f839ec4abe7e7f079322606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8940197396249153698, guid: 86f368e90af19e44b8486b4a199af62b, type: 3}
+  prefab: {fileID: 0}
   toDestroy: {fileID: 4219525593455384837}
 --- !u!1 &4219525593023217318
 GameObject:
@@ -364,7 +353,7 @@ GameObject:
   - component: {fileID: 4219525593209045099}
   - component: {fileID: 4219525593209045096}
   m_Layer: 0
-  m_Name: PopUp_Configuracion
+  m_Name: info_Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -416,7 +405,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 606e51bca264eab4cbbbad7cd46cc636, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -437,6 +426,7 @@ GameObject:
   - component: {fileID: 4219525593455384836}
   - component: {fileID: 4219525593455384838}
   - component: {fileID: 4219525593455384839}
+  - component: {fileID: 3844224796246432844}
   m_Layer: 5
   m_Name: PopUpTutorial
   m_TagString: Untagged
@@ -504,6 +494,25 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3844224796246432844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4219525593455384837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34ef168ccd5d9e148a039948a6c2a2b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagen:
+  - {fileID: 21300000, guid: 8592813321510a346aa2f5ff2d261f3d, type: 3}
+  - {fileID: 21300000, guid: b770c62dd9daaae4b9033736b61a8f3f, type: 3}
+  - {fileID: 21300000, guid: 90a77609d5dc8a44db61dd0934b0c9c7, type: 3}
+  - {fileID: 21300000, guid: abc627e64bed19d4b9d2863e52d13d22, type: 3}
+  info: {fileID: 21300000, guid: 9610f74aca4172240aaaa41c806ed914, type: 3}
+  index: 0
 --- !u!1 &4579771516111368414
 GameObject:
   m_ObjectHideFlags: 0
