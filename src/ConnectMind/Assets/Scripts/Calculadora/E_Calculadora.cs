@@ -32,7 +32,7 @@ public class E_Calculadora : MonoBehaviour
         timer += (Time.deltaTime);
         int seconds = (int)(timer % 60);
 
-        if (seconds == 5)
+        if (seconds == 7)
         {
             if (numero.GetComponent<Text>().text == solucion)
             {
