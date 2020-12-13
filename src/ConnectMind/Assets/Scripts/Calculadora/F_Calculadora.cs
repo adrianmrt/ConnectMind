@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class F_Calculadora : MonoBehaviour
 {
-    private GameObject numero;
-    private Transform [] botones;
-    private string solucion;
-    private string introducido;
-    float timer;
-    bool end;
+    public GameObject numero;
+    public Transform [] botones;
+    public string solucion;
+    public string introducido;
+    public float timer;
+    public bool end;
 
+    public bool acierto;
     private void Awake()
     {
         setUpButtons();
@@ -81,13 +83,12 @@ public class F_Calculadora : MonoBehaviour
         if (introducido == solucion)
         {
             numero.GetComponent<Text>().text = "CORRECTO :)";
-            
-
+            acierto = true;
         }
         else
         {
             numero.GetComponent<Text>().text = "INCORRECTO :(";
-            
+            acierto = false;
         }
 
         end = true;
