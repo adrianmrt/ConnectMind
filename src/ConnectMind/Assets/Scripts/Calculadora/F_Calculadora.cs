@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class F_Calculadora : MonoBehaviour
 {
@@ -18,7 +17,7 @@ public class F_Calculadora : MonoBehaviour
     {
         setUpButtons();
     }
-    void Start()
+    public void Start()
     {
         numero = GameObject.Find("Numero");
         solucion= randomNumber().ToString();

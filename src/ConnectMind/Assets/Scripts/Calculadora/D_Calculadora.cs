@@ -5,21 +5,22 @@ using UnityEngine.UI;
 
 public class D_Calculadora : MonoBehaviour
 {
-    private GameObject numero;
-    private Transform [] botones;
-    private string solucion;
-    private string introducido;
-    float timer;
-    bool end;
+    public GameObject numero;
+    public Transform[] botones;
+    public string solucion;
+    public string introducido;
+    public float timer;
+    public bool end;
 
+    public bool acierto;
     private void Awake()
     {
         setUpButtons();
     }
-    void Start()
+    public void Start()
     {
         numero = GameObject.Find("Numero");
-        solucion= randomNumber().ToString();
+        solucion = randomNumber().ToString();
         numero.GetComponent<Text>().text = solucion;
         introducido = "";
         timer = 0;
@@ -32,7 +33,7 @@ public class D_Calculadora : MonoBehaviour
         timer += (Time.deltaTime);
         int seconds = (int)(timer % 60);
 
-        if (seconds == 3)
+        if (seconds == 5)
         {
             if (numero.GetComponent<Text>().text == solucion)
             {
@@ -46,7 +47,7 @@ public class D_Calculadora : MonoBehaviour
     {
         return Random.Range(10000000, 99999999);
     }
-      
+
     void buttonFunction(int index)
     {
         if (end == false)
@@ -81,18 +82,17 @@ public class D_Calculadora : MonoBehaviour
         if (introducido == solucion)
         {
             numero.GetComponent<Text>().text = "CORRECTO :)";
-            
-
+            acierto = true;
         }
         else
         {
             numero.GetComponent<Text>().text = "INCORRECTO :(";
-            
+            acierto = false;
         }
 
         end = true;
     }
-    
+
     void setUpButtons()
     {
 
@@ -129,5 +129,5 @@ public class D_Calculadora : MonoBehaviour
     }
 
 
-   
+
 }
