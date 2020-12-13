@@ -297,7 +297,7 @@ public class GameController : MonoBehaviour
                 }
                 else if (puntuacion >= 180 && puntuacion < 240)
                 {
-                    if (i == 0 || i == 1 || i == 3)
+                    if (i == 0 || i == 1 || i == 2)
                     {
                         estrellasResultado[i].GetComponent<Image>().sprite = spritesBotones[9];
                     }
