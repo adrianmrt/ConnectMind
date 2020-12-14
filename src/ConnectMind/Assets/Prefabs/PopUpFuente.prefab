@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 6543618962033706558}
   - component: {fileID: 950912987385527065}
   - component: {fileID: 5752457200989576426}
+  - component: {fileID: 5098920505821301728}
   m_Layer: 5
   m_Name: BMas
   m_TagString: Untagged
@@ -195,7 +196,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 950912987385527065}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5098920505821301728}
+        m_MethodName: popUpWork
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5098920505821301728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330761861388631285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46dd4bc4f839ec4abe7e7f079322606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 784199357197113092, guid: a851d75e021b1ba43a5105242847b902, type: 3}
+  toDestroy: {fileID: 0}
 --- !u!1 &1445278009497325694
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,6 +308,7 @@ GameObject:
   - component: {fileID: 7465482620606565208}
   - component: {fileID: 1346419589611811764}
   - component: {fileID: 2242681950223090281}
+  - component: {fileID: 7055165627750243836}
   m_Layer: 5
   m_Name: BMenos
   m_TagString: Untagged
@@ -387,7 +414,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1346419589611811764}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7055165627750243836}
+        m_MethodName: popUpWork
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7055165627750243836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3772371915895983999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46dd4bc4f839ec4abe7e7f079322606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 784199357197113092, guid: a851d75e021b1ba43a5105242847b902, type: 3}
+  toDestroy: {fileID: 0}
 --- !u!1 &5127648345494886841
 GameObject:
   m_ObjectHideFlags: 0

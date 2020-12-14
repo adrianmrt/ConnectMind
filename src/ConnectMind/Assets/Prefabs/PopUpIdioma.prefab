@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5493486076410647824}
   - component: {fileID: 5493486076410647825}
   - component: {fileID: 5493486076410647918}
+  - component: {fileID: 336544671204910778}
   m_Layer: 5
   m_Name: BIngles
   m_TagString: Untagged
@@ -117,7 +118,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5493486076410647825}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 336544671204910778}
+        m_MethodName: popUpWork
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &336544671204910778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5493486076410647917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46dd4bc4f839ec4abe7e7f079322606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 784199357197113092, guid: a851d75e021b1ba43a5105242847b902, type: 3}
+  toDestroy: {fileID: 0}
 --- !u!1 &5493486076539806085
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,6 +454,7 @@ GameObject:
   - component: {fileID: 5493486077011650804}
   - component: {fileID: 5493486077011650805}
   - component: {fileID: 5493486077011650802}
+  - component: {fileID: 620058406004937369}
   m_Layer: 5
   m_Name: BFrances
   m_TagString: Untagged
@@ -533,7 +560,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5493486077011650805}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 620058406004937369}
+        m_MethodName: popUpWork
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &620058406004937369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5493486077011650801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e46dd4bc4f839ec4abe7e7f079322606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 784199357197113092, guid: a851d75e021b1ba43a5105242847b902, type: 3}
+  toDestroy: {fileID: 0}
 --- !u!1 &5493486077376884367
 GameObject:
   m_ObjectHideFlags: 0
