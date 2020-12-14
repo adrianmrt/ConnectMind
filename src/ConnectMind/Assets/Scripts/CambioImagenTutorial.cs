@@ -25,7 +25,7 @@ public class CambioImagenTutorial : MonoBehaviour
     {
         if (index < 4)
             index += 1;
-
+        }
     }
     public void CambioImagenDetras()
     {

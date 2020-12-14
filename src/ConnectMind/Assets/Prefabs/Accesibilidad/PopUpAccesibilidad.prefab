@@ -371,7 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46dd4bc4f839ec4abe7e7f079322606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8400724121973717277, guid: 6ae37034c939c8542aa69ece0ea1ef65, type: 3}
+  prefab: {fileID: 8400724121973717277, guid: 69c080abd69b5574fa56ca859019c94a, type: 3}
   toDestroy: {fileID: 5821985892317645572}
 --- !u!1 &5200418547572203399
 GameObject:
@@ -670,7 +670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46dd4bc4f839ec4abe7e7f079322606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8400724121973717277, guid: 6ae37034c939c8542aa69ece0ea1ef65, type: 3}
+  prefab: {fileID: 8400724121973717277, guid: a7304ffa8630afd4d88458bb2b638816, type: 3}
   toDestroy: {fileID: 5821985892317645572}
 --- !u!1 &5821985892317645572
 GameObject:
