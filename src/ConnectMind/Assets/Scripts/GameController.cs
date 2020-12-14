@@ -34,6 +34,8 @@ public class GameController : MonoBehaviour
     int puntuacion;
     GameObject recuadroPuntuacion;
 
+    GameObject textoExtra;
+    float timer;
     // Start is called before the first frame update
     void Awake()
     {
@@ -48,10 +50,10 @@ public class GameController : MonoBehaviour
         nivelNormal = minijuego.transform.GetChild(1).gameObject;
         nivelDificil = minijuego.transform.GetChild(2).gameObject;
         nivel = pantallaJuego.transform.GetChild(2).gameObject;
-
+        textoExtra = pantallaJuego.transform.GetChild(6).gameObject;
         numeroRonda = 1;
         puntuacion = 0;
-
+        timer = 0;
         //elementos pantallaVD
         nivelVD = rondaVD.transform.GetChild(1).gameObject;
 
@@ -94,6 +96,13 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timer += (Time.deltaTime);
+        int seconds = (int)(timer % 60);
+
+        if (seconds == 3)
+        {
+            textoExtra.SetActive(false);
+        }
         if (numeroRonda > 8)
         {
             resultado();
