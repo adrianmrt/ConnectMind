@@ -9,8 +9,8 @@ public class CambioImagenTutorial : MonoBehaviour
     Button botonDelante;
     Button botonDetras;
 
-    public GameObject info;
-    public int index = 0;
+    GameObject info;
+    int index = 0;
     private void Awake()
     {
         botonDelante = GameObject.Find("BDelante").GetComponent<Button>();
@@ -23,20 +23,18 @@ public class CambioImagenTutorial : MonoBehaviour
     }
     public void CambioImagenDelante()
     {
-        if (index < 3)
+        if (index < 4)
             index += 1;
-
     }
+
     public void CambioImagenDetras()
     {
         if (index > 0)
             index -= 1;
-
     }
 
     private void Update()
     {
         info.GetComponent<Image>().sprite = imagen[index];
-
     }
 }
