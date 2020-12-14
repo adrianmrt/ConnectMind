@@ -9,7 +9,7 @@ public class CambioImagenTutorial : MonoBehaviour
     Button botonDelante;
     Button botonDetras;
 
-    public GameObject info;
+    GameObject info;
     public int index = 0;
     private void Awake()
     {
@@ -23,7 +23,7 @@ public class CambioImagenTutorial : MonoBehaviour
     }
     public void CambioImagenDelante()
     {
-        if (index < 3)
+        if (index < 4)
             index += 1;
 
     }
